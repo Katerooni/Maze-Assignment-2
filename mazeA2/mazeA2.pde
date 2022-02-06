@@ -276,19 +276,15 @@ void maze() {
   ly2[n] = mC*1;
   n = n +1;
 
-  penWall.set((posEE.x + rEE), (((ly1[n])/pixelsPerMeter) - (posEE.y + rEE)));
+  penWall.set((posEE.x), (((ly1[n])) - (posEE.y + rEE)));
+ // penWall.set((posEE.x + rEE), (((ly1[n])/pixelsPerMeter) - (posEE.y + rEE)));
   println("4-" + penWall.x);
   println("5-" + penWall.y);
-  if ((penWall.y < -0.024 && penWall.y > -0.027) && penWall.x <= 0.027) {
+  if ((penWall.y < 149.966) && (penWall.y > 149.961) && penWall.x <= 0.025) {
     fWall = fWall.add(penWall.mult(-kWall));  
-    println("addes");
+
   }
 
-  lx1[n] = mC*1; 
-  ly1[n] = mC*2; 
-  lx2[n] = mC*1; 
-  ly2[n] = mC*3;
-  n = n +1;
 
   lx1[n] = mC*1; 
   ly1[n] = mC*3; 
